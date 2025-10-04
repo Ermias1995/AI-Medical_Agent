@@ -8,7 +8,7 @@ import {
   IconSignature,
   IconTableColumn,
 } from "@tabler/icons-react";
-import { motion } from "motion/react";
+import { motion } from "framer-motion";
 import { BentoGrid, BentoGridItem } from "@/components/ui/bento-grid";
 
 export function FeatureBentoGrid() {
