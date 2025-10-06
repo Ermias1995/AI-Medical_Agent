@@ -17,7 +17,7 @@ export async function POST(request: NextRequest) {
             email: user?.primaryEmailAddress?.emailAddress,
             credits: 10,
            }).returning({ usersTable });
-           return NextResponse.json(result);
+           return NextResponse.json(result[0]?.usersTable);
         }
         return NextResponse.json(users[0]);
     } catch(e){
