@@ -1,5 +1,6 @@
 import React from 'react'
 import HistoryList from './_components/HistoryList'
+import DoctorsAgentList from './_components/DoctorsAgentList'
 import { Button } from '@/components/ui/button'
 
 function Dashboard() {
@@ -10,6 +11,7 @@ function Dashboard() {
                 <Button>+ Consult With Doctor</Button>
             </div>
             <HistoryList />
+            <DoctorsAgentList />
         </div>
     )
 }
