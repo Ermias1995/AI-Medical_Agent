@@ -18,7 +18,6 @@ function DoctorAgentCard({ agent }: { agent: doctorAgent }) {
        <h2 className='font-bold mt-1'>{agent.specialist}</h2>
       <p className='line-clamp-2 text-sm text-gray-500'>{agent.description}</p>
       {/* <p className='text-sm text-gray-500'>{agent.agentPrompt}</p> */}
-      <AddNewSessionDialog />
     </div>
   )
 }
