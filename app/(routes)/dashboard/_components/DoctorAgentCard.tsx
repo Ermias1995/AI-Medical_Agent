@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image';
-import { IconArrowRight } from '@tabler/icons-react';
 import { Button } from '@/components/ui/button';
+import AddNewSessionDialog from './AddNewSessionDialog';
 
 type doctorAgent={
     id:number,
@@ -18,7 +18,7 @@ function DoctorAgentCard({ agent }: { agent: doctorAgent }) {
        <h2 className='font-bold mt-1'>{agent.specialist}</h2>
       <p className='line-clamp-2 text-sm text-gray-500'>{agent.description}</p>
       {/* <p className='text-sm text-gray-500'>{agent.agentPrompt}</p> */}
-      <Button className='w-full mt-2'>Start Consultation <IconArrowRight /></Button>
+      <AddNewSessionDialog />
     </div>
   )
 }
